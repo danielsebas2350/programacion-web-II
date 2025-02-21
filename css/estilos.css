@@ -1,0 +1,66 @@
+/* Estilo para el contenedor padre */
+.padre {
+    background-color: #FFDDC1;  /* Color para el div .padre */
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #333;
+}
+  
+/* Estilo para el div padre1 */
+.padre1 {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente los hijos */
+    align-items: center;      /* Centra verticalmente */
+    flex-direction: column;   /* Apila los divs hijo1 y hijo2 verticalmente */
+    height: 500px;            /* Altura para que sea visible */
+    background-color: #f0f0f0; /* Color de fondo */
+    border: 2px solid #333;
+}
+  
+/* Estilo para los nietos (círculos más grandes) */
+.nieto1, .nieto2 {
+    width: 120px;   /* Tamaño aumentado */
+    height: 120px;  /* Tamaño aumentado */
+    border-radius: 50%;  /* Crea el círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3498db; /* Color para el primer nieto */
+    border: 2px solid #333;
+}
+
+.nieto2 {
+    background-color: #e74c3c; /* Color para el segundo nieto */
+}
+
+/* Estilo para los bisnietos (círculos más pequeños) */
+.bisnieto2 {
+    width: 80px;   /* Tamaño aumentado */
+    height: 80px;  /* Tamaño aumentado */
+    border-radius: 50%;  /* Crea un círculo más pequeño */
+    background-color: #2ecc71; /* Color para bisnieto2 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+}
+  
+/* Estilo para el tataranieto (círculo más pequeño dentro de bisnieto2) */
+.tataranieto1, .tataranieto2 {
+    width: 40px;   /* Tamaño aumentado */
+    height: 40px;  /* Tamaño aumentado */
+    border-radius: 50%;
+    background-color: #f39c12; /* Color para tataranieto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+}
+  
+.tataratataranieto {
+    width: 20px;   /* Tamaño aumentado */
+    height: 20px;  /* Tamaño aumentado */
+    border-radius: 50%;
+    background-color: #9b59b6; /* Color para el tataratataranieto */
+    border: 2px solid #333;
+}
